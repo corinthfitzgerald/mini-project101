@@ -1,0 +1,159 @@
+ /*font-family: "Manrope", sans-serif;*/
+ 
+ /*font-family: "Space Mono", monospace;*/
+ 
+* {   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif; font-size: 20px;
+}
+
+body {
+    background-color: #edf1f1;
+    color: #1a234d;
+}
+
+a { 
+    color: #1a234d;
+    font-size: 16px;
+    font-weight: 300;
+    text-underline-offset: 4px; 
+    text-decoration-thickness: 1px;
+}
+
+.ul {
+    display: flex;
+}
+
+.li {
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px 12px;
+    background-color: white;
+} 
+
+.logo {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+} 
+
+.logo_img {
+    width: 40px;
+    margin-top: 8px;
+}
+
+.logo_text {
+    font-size: 20px; /*Simplified text only */
+    font-weight: 200;
+}
+
+/*  
+
+HEADER
+
+*/  
+
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 8px;
+}
+
+.row__course {
+    border-left:1px dashed#cbd5e1; /*Your Course */
+}
+
+.course {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-left: 40 px;
+    gap: 20px;
+    align-items: center;
+    padding: 8px 0;
+} 
+
+.course__icon {
+    font-size: 80px;
+}
+
+.course__text {
+    padding: 20px; 
+}
+
+.course__selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.course__selection {
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    color: #727892;
+    letter-spacing: 0.1px; 
+}
+
+.course__title {
+    font-weight: 600;
+    font-size: 44px;
+    margin-left: 32px;
+    letter-spacing: 2px;
+
+} 
+
+.hero {
+    border: 1.5px solid #cbd5e1;
+    border-right: 20px solid #badcee;
+    border-radius: 0 16px 16px 0;   
+    padding: 40px;
+    box-shadow: 4px 4px 10px rgb(0 0 0 0.1); 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefefe;
+}
+
+.hero__img--wrapper {
+    max-width: 540px;
+}
+
+.hero__description {
+    margin-left: 60px;
+}
+
+.subheader {
+    font-size: 20px;
+    margin: 16px 0 24px 0;
+    font-weight: 400;
+    color: #64748b;
+}
+
