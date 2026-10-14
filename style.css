@@ -22,11 +22,11 @@ a {
     text-decoration-thickness: 1px;
 }
 
-.ul {
+ul {
     display: flex;
 }
 
-.li {
+li {
     list-style-type: none;
     padding-left: 16px;
 }
@@ -34,6 +34,15 @@ a {
 h1 {
     font-size: 60px;
 }
+
+img{
+    width: 100%;
+}
+/*
+
+NAV
+
+*/
 
 nav {
     height: 60px;
@@ -67,7 +76,7 @@ HEADER
 */  
 
 
-.header {
+header {
     width: 100%;
     margin: 0 auto;
 }
@@ -90,7 +99,7 @@ HEADER
     display: flex;
     justify-content: start;
     width: 100%;
-    margin-left: 40 px;
+    margin-left: 40px;
     gap: 20px;
     align-items: center;
     padding: 8px 0;
@@ -131,7 +140,7 @@ HEADER
     border-right: 20px solid #badcee;
     border-radius: 0 16px 16px 0;   
     padding: 40px;
-    box-shadow: 4px 4px 10px rgb(0 0 0 0.1); 
+    box-shadow: 4px 4px 10px rgb(0,0,0,0.1); 
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -157,3 +166,205 @@ HEADER
     color: #64748b;
 }
 
+button {
+    background-color: #c231c2;
+    width: 95%;
+    color: #ffffff; /*white text*/
+    border: none;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Space Mono", monospace; /*matches font-family in course-selection*/
+    margin: 0 auto;
+}
+/* 
+background-color: #c231c2;
+width: 95%
+color: white;
+border: none;
+padding: 8px 16px;
+font-size: 24px;
+cursor: pointer;
+border-radius: 10px;
+font-family: "Space Mono", monospace;
+margin: 0 auto;*/
+
+/*
+ABOUT
+SOCIAL
+*/
+
+#about, 
+#social, 
+#contact,
+#footer {
+    padding: 40px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__card {
+    border: 1.5px dashed #cbd5e1;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 16px 16px 0; 
+}
+
+.section__card--about { /*modified for ABOUT card*/
+    background-color: #ffeaaf;
+    border-right: 20px solid #badcee;
+}
+
+.section__card--social { /*modified for SOCIAL card*/
+   background-color: #badcee;
+   border-right: 20px solid #ef4a10;
+}
+
+
+.section__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_row,
+.social_row {
+    justify-content: start;
+}
+
+.section__title { /*About and Social*/
+    margin-bottom: 16px;
+   font-family: "Space Mono", monospace; 
+   letter-spacing: 8px; 
+}
+
+.section__image--wrapper {
+    width: 60%;
+    padding: 0 24px; /*space for image to breathe*/
+}
+
+.section__description--wrapper {
+    width: 70%;
+    padding: 0 24px; /*space for text to breathe*/  
+}
+
+.section__description--para {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/*
+
+CONTACT
+
+*/  
+
+.section__card--contact {
+    border: 1.5px dashed #c231c2;
+    width: 96%;
+    border-radius: 16px;
+}
+
+form {
+    width: 100%; /*form takes up full width of section card*/
+    max-width: 900px; /*helps to keep form centered when minimized the screen*/
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 24px;
+    gap: 12px;
+}
+
+input, textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+    width: 500px;
+    border-radius: 6px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+    background-color: #badcee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1.5px dashed #cbd5e1;
+    padding: 12px 0;
+    border-radius: 20% 20% 0 0; /*rounded top corners*/
+}
+
+.footer__logo {
+    margin-bottom: 16px;
+}
+
+.footer__link {
+    padding: 0 24px;
+}
+
+/*
+
+RESPONSIVENESS
+
+*/
+
+/* 
+
+SMALLER SCREENS
+
+*/
+
+@media (max-width: 1024px) {
+
+
+    .section__description--para {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    a {
+        font-size: 16px;
+    }
+    .course {
+        gap: 4px;
+        margin-left: 0;
+        font-size: 40px;
+    }
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .hero__img--wrapper {
+        max-width: 500px;
+    }
+
+    .hero__description {
+        margin-left: 0;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .section__description {
+        flex-direction: column;
+    }
+    
+    .section__description--wrapper {
+        width: 100%;
+    }
+    input, textarea {
+        width: 400px;
+    }
+} 
